@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Стилизация самого списка */
+.custom-list {
+    list-style: none; /* Убираем стандартные точки у списка */
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+/* Стилизация каждого элемента списка */
+.custom-list li {
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 12px; /* Скругленные углы карточки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Легкая тень */
+    display: flex;
+    justify-content: space-between; /* Текст слева, кнопка справа */
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Эффект при наведении на элемент списка */
+.custom-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* КРУГЛЫЕ КНОПКИ */
+.round-btn {
+    width: 40px;  /* Ширина и высота должны быть равны */
+    height: 40px;
+    border-radius: 50%; /* Делает кнопку идеально круглой */
+    background-color: #4f46e5; /* Красивый фиолетовый цвет */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Эффект при наведении на кнопку */
+.round-btn:hover {
+    background-color: #4338ca; /* Более темный оттенок */
+    transform: scale(1.1); /* Слегка увеличивается */
+}
+
+/* Эффект при нажатии */
+.round-btn:active {
+    transform: scale(0.95);
+}
+
+.card {
+  display: flex;            /* Включаем Flexbox */
+  flex-direction: column;   /* Выстраиваем элементы вертикально (один под другим) */
+  align-items: center;      /* Выравниваем и картинку, и текст ровно по центру по горизонтали */
+  text-align: center;       /* Выравниваем текст внутри самого тега p по центру */
+  gap: 15px;                /* Расстояние (отступ) между картинкой и текстом */
+}
+
+/* Опционально: задайте размер картинке, чтобы она не была слишком огромной */
+.card img {
+  max-width: 100%;          /* Картинка не будет вылезать за пределы контейнера */
+  width: 300px;             /* Желаемая ширина фото */
+  height: auto;             /* Пропорции сохраняются автоматически */
+  border-radius: 8px;       /* Опционально: красивые скругленные углы */
+}
+
+.unit_item a{
+    background-color: rgb(228, 189, 139);
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.unit_item{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.unit_item a:hover{
+    color: rgb(255, 0, 64);
+    background-color: aqua;
+    transition: all .5s;
+}

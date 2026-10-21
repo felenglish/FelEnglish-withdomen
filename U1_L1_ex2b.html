@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelEnglish</title>
+</head>
+<body>
+    <h1>Look at the characters in the picture, listen to the audio, and say who is speaking.
+</h1>
+    <img src="2a.PNG" alt="">
+    
+    <button id="playBtn">Включить музыку</button>
+
+    <audio id="myAudio" src="U1_L1_ex2b.mp3"></audio>
+
+    <script>
+        const btn = document.getElementById('playBtn');
+        const audio = document.getElementById('myAudio');
+
+        btn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                btn.textContent = 'Пауза';
+            } else {
+                audio.pause();
+                btn.textContent = 'Включить музыку';
+            }
+        });
+    </script>
+
+    <div class="menu_item">
+        <a href="U1_L1_ex3.html">Следующее упражнение</a>
+</body>
+</html>
